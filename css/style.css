@@ -1,0 +1,836 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 7500px;
+    position: relative;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/*      ///////////////////  --header--  /////////////////////    */
+.header{
+    width: 100%;
+    background-color: 3F72AF;
+    height: 55px;
+    position: fixed;
+    top: 0;
+    z-index: 5;
+}
+.header-icon{
+    float: left;
+    width: 220px;
+    height: 55px;
+    margin-left: 170px;
+    font-size: 45px;
+    color: 112D4E;
+    margin-top: 5px;
+    
+}
+.header-list{
+    float: right;
+    margin-right: 150px;
+}
+.header-list li{
+    list-style: none;
+    display: inline-block;
+    color: white;
+    font-size: 25px;
+    margin: 13px 0px 0px 33px;
+}
+.header-list li a{
+    text-decoration: none;
+    color: white;
+}
+/*   ////////////// --- home-section --- /////////////*/
+.home {
+    height: 100vh;
+    width: 100%;
+    background-image: url(../images/wallpaperflare.com_wallpaper\ \(3\).jpg);
+    background-size: cover;
+    position: relative;
+}
+.home-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    /* background-color: rgba(0, 0, 0, 0.8 ); */
+    background-color: rgba(17, 45, 78, 0.7)
+}
+.home-content{
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center; 
+}
+.home-title{
+    color: white;
+    font-size: 60px;
+    text-transform: uppercase;
+}
+.home-p{
+    color: rgb(187, 187, 187);
+    font-size: 20px;
+    margin: 10px 0;
+    text-transform: lowercase;
+}
+.home-btn{
+    width: 150px;
+    padding: 15px;
+    border: 0;
+    border-radius: 8px;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+.home-btn a{
+    text-decoration: none;
+    color: white;
+}
+.home-btn1{
+    /* background-color: rgb(34, 34, 81); */
+    background-color: 3F72AF;
+    margin-right: 15px;
+}
+.home-btn2{
+    background-color: rgb(139, 36, 36);
+}
+.home-btn:hover {
+    opacity: 0.8;
+}
+/*     ///////////// --- our team --- //////////////     */
+.team-section{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.team-section-title{
+    font-size: 35px;
+    padding: 15px 0;
+    margin: 70px auto 35px;
+    text-transform: capitalize;
+    color: 112D4E;
+}
+.team-container{
+    width: 80%;
+    margin: auto; 
+}
+.team-content{
+    overflow: auto;
+}
+.team-item{
+    float: left;
+    background-color: DBE2EF;
+    width: 30%;
+    padding: 14px 18px;
+    position: relative;
+}
+.team-item2{
+    margin: 0 5%;
+}
+.team-image{
+    width: 96%;
+    margin: auto;
+    position: relative;
+}
+.team-image img{
+    width: 100%;
+}
+.team-icons{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: 1s;
+}
+.team-icons a{
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(0, 166, 255);
+    color: white;
+    margin-left: auto;
+}
+.team-icons a i{
+    line-height: 40px;
+    font-size: 22px;
+}
+.team-item:hover .team-icons{
+    opacity: 1;
+    visibility: visible;
+}
+.team-info-title{
+    text-transform: capitalize;
+}
+.team-info-p{
+    text-transform: uppercase;
+    color: grey;
+}
+.team-item:hover .team-info-title{
+    color: rgb(139, 36, 36);
+}
+.team-item:hover .team-info-p{
+    color: black;
+}
+.team-item::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    background-color: 112D4E;
+    transition: 1s;
+}
+.team-item:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
+/*     ///////////// --- Welcome To Website --- //////////////     */
+.ww-section{
+    height: 100vh;
+    text-align: center;
+}
+.ww-title{
+    font-size: 30px;
+    padding: 120px 0 70px;
+    margin: auto ;
+    text-transform: capitalize;
+    color: 112D4E;
+}
+.ww-container{
+    width: 80%;
+    margin: auto; 
+}
+.ww-content{
+    overflow: auto;
+    position: relative;
+}
+.ww-item{
+    width: 30%;
+    float: left;
+    border: solid 1px grey;
+    padding: 30px 15px;
+    position: relative;
+}
+.ww-item2{
+    margin: 0 5%;
+}
+.ww-icon{
+    font-size: 35px;
+    color: #6195ff ;
+    margin-bottom: 15px;
+}
+.ww-info-title{
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+    font-size: 26px;
+    text-transform: capitalize;
+    color: 112D4E;
+}
+.ww-item:hover .ww-info-title{
+    color: rgb(255, 255, 255);
+}
+.ww-info-p{
+    margin-bottom: 15px;
+    letter-spacing: 0.8px;
+    line-height: 25px;
+    color:grey;
+    font-size: 17px;
+}
+.ww-item:hover .ww-info-p{
+    color: rgb(186, 185, 185);
+}
+.ww-info-link{
+    color: #6195ff ;
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+.ww-item::after{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    background-color: 112D4E;
+    transition: 0.5s;
+}
+.ww-item:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    z-index: -1;
+}
+/*     ///////////// --- What We Offer --- //////////////     */
+.wwo-section{
+    text-align: center;
+}
+.wwo-title{
+    font-size: 30px;
+    padding: 120px 0 70px;
+    margin: auto ;
+    text-transform: capitalize;
+    color: 112D4E;
+}
+.wwo-container{
+    width: 80%;
+    margin: auto; 
+}
+.wwo-content{
+    overflow: auto;
+    position: relative;
+}
+.wwo-item{
+    width: 30%;
+    float: left;
+    border: solid 1px grey;
+    padding: 30px 15px;
+    position: relative;
+    margin-bottom: 20px;
+}
+.wwo-item2,.wwo-item5 {
+    margin: 0 5%;
+}
+.wwo-icon{
+    font-size: 35px;
+    color: #6195ff ;
+    margin-bottom: 15px;
+
+    position: absolute;
+    top: 20px;
+    left: 15px;
+}
+.wwo-info{
+    margin-left: 60px;
+    text-align: left;
+}
+
+.wwo-info-title{
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+    font-size: 26px;
+    text-transform: capitalize;
+    color: 112D4E;
+
+}
+.wwo-item:hover .wwo-info-title{
+    color: rgb(255, 255, 255);
+}
+.wwo-info-p{
+    margin-bottom: 15px;
+    letter-spacing: 0.8px;
+    line-height: 25px;
+    color:grey;
+    font-size: 17px;
+}
+.wwo-item:hover .ww-info-p{
+    color: rgb(186, 185, 185);
+}
+.wwo-item::after{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    background-color: 112D4E;
+    transition: 0.5s;
+}
+.wwo-item:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    z-index: -1;
+}
+/*     ///////////// --- Featured Works --- //////////////     */
+.fw-section{
+    height: 1000px;
+    text-align: center;
+    background-color: DBE2EF;
+}
+.fw-title{
+    font-size: 30px;
+    padding: 120px 0 70px;
+    margin: auto ;
+    text-transform: capitalize;
+    color: 112D4E;
+}
+.fw-container{
+    width: 80%;
+    margin: auto; 
+}
+.fw-content{
+    overflow: auto;
+}
+.fw-item{
+    width: 30%;
+    float: left;
+    position: relative;
+    padding: 14px 18px;
+    margin-bottom: 15px;
+}
+.fw-item2,.fw-item5{
+    margin: 0 5%;
+}
+.fw-item-img{
+    width: 100%;
+}
+.fw-info{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background-color: rgba(0, 0, 0, 0.7); */
+    background-color: rgba(17, 45, 78, 0.7);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+.fw-icon a{
+    display: inline-block;
+    font-size: 20px;
+    color: #623f95 ;
+    background-color: #6195ff;
+    width: 30px;
+    height: 30px;
+    margin: 10px 0;
+}
+.fw-icon a i{
+    line-height: 30px;
+    font-size: 20px;
+}
+.fw-info-category {
+    text-transform: capitalize;
+    color: #6195ff;
+    margin:38% 0 20px;
+}
+.fw-info-p{
+    margin-bottom: 10px;
+    color: white;
+}
+.fw-item:hover .fw-info{
+    opacity: 1;
+    visibility: visible;
+}
+/*     ///////////// --- end of Featured Works --- //////////////     */
+.news-section{
+    /* text-align: center; */
+}
+.news-section-title{
+    font-size: 35px;
+    padding: 15px 0;
+    margin: 70px auto 35px;
+    text-transform: capitalize;
+    color: 112D4E;
+    text-align: center;
+}
+.news-container{
+    width: 80%;
+    margin: auto; 
+}
+.news-content{
+    overflow: auto;
+}
+.news-item{
+    float: left;
+    background-color: DBE2EF;
+    width: 30%;
+    padding: 14px 18px;
+    position: relative;
+}
+.news-item2{
+    margin: 0 5%;
+}
+.news-image{
+    width: 96%;
+    margin: auto;
+    position: relative;
+}
+.news-image img{
+    width: 100%;
+}
+.news-icons{
+    margin: 15px 0; 
+}
+.news-icon{
+    display: inline-block;
+}
+.news-icon i{
+    color: #4882f5;
+}
+.news-p{
+    display: inline;
+}
+.news-info-title{
+    color: 112D4E;
+    font-size: 25px;
+}
+.news-info-p{
+    margin: 15px 0;
+    line-height: 20px;
+    letter-spacing: 0.8px;
+}
+.news-info-link{
+    text-decoration: none;
+    color: #4882f5;
+}
+.news-item::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    background-color: black;
+    transition: 1s;
+}
+.news-item:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
+
+/*   /////////////  ---- footer ----  //////////////     */
+.footer{
+    width: 100%;
+    background-color: DBE2EF;
+    height: 350px;
+    position: absolute;
+    bottom: 0;
+    padding: 20px;
+}
+.footer-content{
+    width: 60%;
+    margin: 25px auto;
+    text-align: center;
+}
+.footer-image {
+    width: 30%;
+    margin: auto;
+}
+.footer-image img{
+    width: 90%;
+}
+.footer-icons{
+    margin: 15px 0;
+}
+.footer-icons a{
+    display: inline-block;
+    color: white;
+    background-color: #6195ff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: relative;
+}
+.footer-icons a i{
+    line-height: 50px;
+    font-size: 22px;
+}
+.footer-icons a:hover{
+    color: white;
+    z-index: 2;
+}
+.footer-copyright{
+    text-transform: uppercase;
+    color: 112D4E;
+}
+.footer-icons a::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    background-color: blue;
+    transition: 0.5s;
+    border-radius: 50%;
+}
+.footer-icons a:hover::after{
+    opacity: 0.5;
+    visibility: visible;
+    z-index: -1;
+}
+
+/*    ////////////  ----------------   ////////// */
+
+/*     ///////////// --- Welcome To Website --- //////////////     */
+.pricing-section{
+    height: 800px;
+    text-align: center;
+    background-color: F9F7F7;
+}
+.pricing-title{
+    font-size: 30px;
+    padding: 120px 0 70px;
+    margin: auto ;
+    text-transform: capitalize;
+    color: 112D4E;
+}
+.pricing-container{
+    width: 80%;
+    margin: auto; 
+}
+.pricing-content{
+    overflow: auto;
+    position: relative;
+}
+.pricing-item{
+    width: 30%;
+    float: left;
+    border: solid 1px grey;
+    padding: 30px 15px;
+    position: relative;
+}
+.pricing-item2{
+    margin: 0 5%;
+}
+.pricing-info-title{
+    margin-bottom: 15px;
+    font-size: 24px;
+    text-transform: capitalize;
+}
+.pricing-item:hover .pricing-info-title{
+    color: rgb(255, 0, 0);
+}
+.pricing-9{
+    width: 100px;
+    height: 100px;
+    border: solid 2px red;
+    margin: 20px auto;
+    padding: 12px 0;
+    border-radius: 50%;
+    font-weight: bold;
+}
+.pricing-9-p1{
+    font-size: 50px;
+}
+.pricing-9-p2{
+    font-size: 15px;
+}
+.pricing-p{
+    margin-bottom: 15px;
+    letter-spacing: 0.8px;
+    line-height: 25px;
+    color:grey;
+    font-size: 17px;
+}
+.pricing-item:hover .pricing-p{
+    color: rgb(183, 3, 3);
+}
+.pricing-info-link{
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+.pricing-info-button{
+    padding: 5px 15px;
+    border: solid 1px #6195ff;
+}
+.pricing-info::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    background-color: 112D4E;
+    transition: 0.5s;
+}
+.pricing-info:hover::after{
+    height: 100%;
+    opacity: 0.5;
+}
+/*     ///////////// --- why choose us --- //////////////     */
+.why-section{
+    height: 700px;
+    background-color: DBE2EF;
+    padding: 50px;
+    margin-top: 80px;
+}
+.why-container{
+    width: 80%;
+    margin: 60px auto; 
+    padding: 20px;
+    position: relative;
+}
+.why-content{
+    overflow: auto;
+    position: relative;
+}
+.why-item{
+    width: 50%;
+    float: left;
+    padding: 30px 15px;
+}
+.why-img{
+    width: 100%;
+}
+.why-item1-header{
+    font-size: 40px;
+    margin: 25px 0;
+    color: 112D4E;
+}
+.why-item1-p{
+    color: rgb(93, 92, 91);
+    margin-bottom: 25px;
+    font-size: 20px;
+    line-height: 1.3;
+}
+.why-icons{
+    line-height: 30px;
+    color: rgb(70, 76, 78);
+    font-size: 22px;
+}
+.far {
+    color: #6195ff;
+    font-size: 20px;
+}
+.why-ul{
+    color: #6195ff;
+    font-size: 35px;
+    margin: 20px auto;
+    text-align: center;
+}
+.why-ul li{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-color: grey;
+    border-radius: 50%;
+    border: solid 1px #6195ff;
+}
+.why-ul .wul{
+    background-color: #6195ff;
+}
+.why-ul li:hover{
+    background-color: #6195ff;
+}
+/*       ////////// --- numbers ---  ///////////       */
+.numbers{
+    height: 400px;
+    background-attachment: fixed;
+    background-image: url(../images/demon-slayer-8k-wallpapers.jpg);
+    background-size: cover;
+    position: relative;
+    text-align: center;
+}
+.num-content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.num-container{
+    width: 80%;
+    margin: auto;
+    margin-top: 120px;
+}
+.num-items{
+    overflow: auto;
+}
+.num-item{
+    float: left;
+    width: 22%;
+    padding: 10px;
+}
+.num-item2{
+    margin: 0 4%;
+}
+.num-item3{
+    margin-right: 4%;
+}
+.num-item i{
+    color: #4882f5;
+    font-size: 40px;
+}
+.num-item-title{
+    color: white;
+    font-size: 30px;
+    margin: 8px 0;
+}
+.num-item-p{
+    color: white;
+}
+
+/*     ///////////    --- members ---   ////////////       */
+
+.members{
+    height: 400px;
+    background-attachment: fixed;
+    background-image: url(../images/demon-slayer-8k-wallpapers.jpg);
+    background-size: cover;
+    position: relative;
+}
+.members-content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.members-container{
+    width: 80%;
+    margin: auto;
+    margin-top: 80px;
+}
+.members-items{
+    overflow: auto;
+    /* background-color: rgb(149, 180, 102); */
+    padding: 10px;
+}
+.members-item{
+    float: left;
+    width: 50%;
+    padding: 10px;
+    /* background-color: rgb(112, 112, 106); */
+    position: relative;
+}
+
+.mem{
+    margin-left: 100px;
+}
+.member-p{
+    margin-top: 20px;
+    color: white;
+    line-height: 1.5;
+}
+.members-item img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: absolute;
+    left: 20px;
+    top: 12px;
+}
+
+.members-item-title{
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    margin: 8px 0;
+    text-transform:capitalize ;
+}
+.members-item-p{
+    color: #4882f5;
+}
